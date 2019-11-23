@@ -1,1 +1,17 @@
 // Mixins Here
+@import "variables.less";
+.button(@border: 1px transparent solid; @radius: 10px; @padding: 10px; @color: @btn-bg-color;@text: center;@text-size: 25px; @text-color: white;){
+    border: @border;
+    border-radius: @radius;
+    padding: @padding;
+    background-color: @color;
+    text-align: @text;
+    font-size: @text-size;
+    color:@text-color;
+}
+.navigation(@text-decoration: none; @padding: 20px; @color: @nav-font; @font-size: 1.75em;){
+  text-decoration: @text-decoration;
+  padding: @padding;
+  color: @color;
+  font-size: @font-size;
+}

@@ -1,7 +1,10 @@
 // Home Content
-
+@import "variables.less";
+@import "mixins.less";
 .home {
-
+@media @phone{
+  max-width: 500px;
+}
   .intro {
 
     h2 {
@@ -11,14 +14,29 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .blast{
+      @media @phone{
+      width: 100%;
+    }
+    }
+    .sky{
+      @media @phone{
+       display: none;
 
+      }
+    }
+    .launch{
+      @media @phone{
+       display: none;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -40,14 +58,23 @@
   }
 
   .walk {
+    @media @phone{
+    padding: 15px;
+    flex-direction: column-reverse;
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
+
     .walk-text {
+      @media @phone{
+       width: 100%;
+      }
       width: 50%;
+
 
       h3 {
         margin-bottom: 10px;
@@ -58,13 +85,27 @@
       }
 
       .btn {
+        @media @phone{
+         width: 100%;
+        }
+        .button();
+        width:49%;
+        &:hover{
+          color: @btn-bg-color;
+          background-color: white;
+          border-color: black;
+        }
       }
     }
 
     .walk-img {
+      @media @phone{
+       margin: 0;
+       width: 100%;
+      }
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
