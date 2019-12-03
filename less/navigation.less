@@ -1,8 +1,6 @@
 // Navigation code here
 
-@import "variables.less";
-@import "mixins.less";
-.navigation-wrap{
+.navigation-wrap {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -11,17 +9,13 @@
   flex-direction: column;
   align-items: center;
   background-color: @nav-bg;
-h1{
-font-size: 4em;
-padding: 20px;
-}
 
-a{
-  .navigation();
-}
+  h1 {
+    font-size: 4em;
+    padding: 20px;
+  }
 
-
-
-
-
+  a {
+    .navigation();
+  }
 }
